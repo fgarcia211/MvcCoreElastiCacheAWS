@@ -5,9 +5,8 @@ using StackExchange.Redis;
 
 namespace MvcCoreElastiCacheAWS.Services
 {
-    SERVICEAWSCACHE
 
-public class ServiceAWSCache
+    public class ServiceAWSCache
     {
         private IDatabase cache;
 
