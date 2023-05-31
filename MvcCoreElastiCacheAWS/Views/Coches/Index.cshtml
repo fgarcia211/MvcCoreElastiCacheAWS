@@ -9,7 +9,10 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+
+@if (Model != null)
+{
+    <table class="table">
     <thead>
         <tr>
             <th>
@@ -50,3 +53,5 @@
 }
     </tbody>
 </table>
+}
+
