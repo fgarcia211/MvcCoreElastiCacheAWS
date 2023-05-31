@@ -43,7 +43,8 @@
                 @Html.DisplayFor(modelItem => item.Imagen)
             </td>
             <td>
-                @Html.ActionLink("Details", "Details", new { id = item.IdCoche })
+                @Html.ActionLink("Details", "Details", new { id = item.IdCoche }) |
+                <a asp-action="SeleccionarFavorito" asp-controller="Coches" asp-route-id="@item.IdCoche">Seleccionar favorito</a>
             </td>
         </tr>
 }
